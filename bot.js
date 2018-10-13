@@ -166,7 +166,7 @@ if(!message.channel.guild) return;
 /////
 /////
 client.on("message", message => {
-            if (message.content.startsWith(prefix + "bconline")) {
+            if (message.content.startsWith(prefix + "bconline.")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
