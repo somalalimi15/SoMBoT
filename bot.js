@@ -165,21 +165,7 @@ if(!message.channel.guild) return;
 /////
 /////
 /////
-client.on('message', message => {
-if (message.content.startsWith(prefix + 'namee')) {
-   client.user.setUsername(argresult).then
-          message.channel.sendMessage(`**__${argresult}__** : **Name changed**`)
-      return message.reply("**You**");
-    } else
-    if (message.content.startsWith(prefix + 'imagee')) {
-      client.user.setAvatar(argresult);
-        message.channel.sendMessage(`**__${argresult}__** :** The Bot Image Has Been Changed**`);
-    
-    }
-    });
-/////
-/////
-/////
+
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
