@@ -82,7 +82,7 @@ message.member.voiceChannel.join();
 /////
 /////
 client.on('ready', () => {
-    client.channels.find(c => c.id === '500450967356047371').join();
+    client.channels.find(c => c.id === '501299872595574785').join();
 });
 /////
 /////
@@ -139,44 +139,13 @@ if (message.content.startsWith(prefix + "Uptime")) {
 /////
 /////
 /////
-client.on('message', message => {
-    if (message.content.startsWith("avatar")) {
-if(!message.channel.guild) return;
 
-        var mentionned = message.mentions.users.first();
 
-    var client;
-      if(mentionned){
-          var client = mentionned;
-      } else {
-          var client = message.author;
-
-      }
-
-        const embed = new Discord.RichEmbed()
-                           .addField('**Requested by:**', "<@" + message.author.id + ">")
-
-        .setColor(000000)
-        .setFooter("SُoM .")
-        .setImage(client.avatarURL)
-      message.channel.sendEmbed(embed);
-    }
-});
 /////
 /////
 /////
-client.on("message", message => {
-            if (message.content.startsWith(prefix + "bconline.")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
- m.send(`${argresult}\n ${m}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` :** عدد الاعضاء المستلمين**`); 
- message.delete(); 
-};     
-});
+
+
 /////
 /////
 /////
