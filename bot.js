@@ -139,7 +139,8 @@ if (message.content.startsWith(prefix + "Uptime")) {
 /////
 /////
 /////
-
+if (message.author.id !== '368768446327947265') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+if(!message.author.id === '368768446327947265') return;
 
 /////
 /////
