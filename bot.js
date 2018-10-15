@@ -139,7 +139,7 @@ if (message.content.startsWith(prefix + "Uptime")) {
 /////
 /////
 /////
-if(!message.author.id === '368768446327947265') return;
+
 
 /////
 /////
