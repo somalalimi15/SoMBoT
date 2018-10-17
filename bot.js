@@ -82,7 +82,7 @@ message.member.voiceChannel.join();
 /////
 /////
 client.on('ready', () => {
-    client.channels.find(c => c.id === '501299872595574785').join();
+    client.channels.find(c => c.id === '500448084849852416').join();
 });
 /////
 /////
